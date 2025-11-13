@@ -1,3 +1,9 @@
 {
-  "item.meloncitrusmod.milk_bottle": "Bottle of Milk"
+  "item.meloncitrusmod.milk_bottle": "Bottle of Milk",
+
+  "block.meloncitrusmod.carved_melon": "Melon with a Face",
+  "block.meloncitrusmod.jack_o_melon": "Jack o' Melon",
+
+  "creativetab.ingredient_tab": "Ingredient Tab",
+  "creativetab.deco_blocks_tab": "Decorative Blocks"
 }

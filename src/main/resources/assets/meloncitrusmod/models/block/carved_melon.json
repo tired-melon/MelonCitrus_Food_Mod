@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:block/cube",
+  "display": {
+    "firstperson_righthand": {
+      "rotation": [ 0, 135, 0 ],
+      "translation": [ 0, 0, 0 ],
+      "scale": [ 0.40, 0.40, 0.40 ]
+    }
+  },
+  "textures": {
+    "east": "meloncitrusmod:block/carved_melon_top",
+    "north": "meloncitrusmod:block/carved_melon_face",
+    "west": "meloncitrusmod:block/carved_melon_top",
+    "south": "meloncitrusmod:block/carved_melon_side",
+    "top": "meloncitrusmod:block/carved_melon_top",
+    "bottom": "meloncitrusmod:block/carved_melon_top"
+  }
+}

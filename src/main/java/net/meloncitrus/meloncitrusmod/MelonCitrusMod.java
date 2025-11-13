@@ -1,6 +1,8 @@
 package net.meloncitrus.meloncitrusmod;
 
 import com.mojang.logging.LogUtils;
+import net.meloncitrus.meloncitrusmod.block.ModBlocks;
+import net.meloncitrus.meloncitrusmod.item.ModCreativeModeTabs;
 import net.meloncitrus.meloncitrusmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -27,7 +29,10 @@ public class MelonCitrusMod {
     public MelonCitrusMod(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
