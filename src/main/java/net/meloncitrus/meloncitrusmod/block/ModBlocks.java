@@ -1,6 +1,7 @@
 package net.meloncitrus.meloncitrusmod.block;
 
 import net.meloncitrus.meloncitrusmod.MelonCitrusMod;
+import net.meloncitrus.meloncitrusmod.block.custom.CarvedMelonBlock;
 import net.meloncitrus.meloncitrusmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -21,10 +22,10 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, MelonCitrusMod.MOD_ID);
 
     public static final RegistryObject<Block> CARVED_MELON = registerBlock("carved_melon",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.MELON)));
+            () -> new CarvedMelonBlock(BlockBehaviour.Properties.copy(Blocks.MELON).sound(SoundType.HARD_CROP)));
 
     public static final RegistryObject<Block> JACK_O_MELON = registerBlock("jack_o_melon",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN).sound(SoundType.HARD_CROP).mapColor(MapColor.COLOR_PINK)));
+            () -> new CarvedMelonBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN).sound(SoundType.HARD_CROP).mapColor(MapColor.COLOR_PINK)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
@@ -32,7 +33,7 @@ public class ModBlocks {
         return toReturn;
     }
 
-    private static <T extends Block>RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
+    private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 

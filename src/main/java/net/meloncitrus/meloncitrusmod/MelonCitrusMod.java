@@ -4,6 +4,8 @@ import com.mojang.logging.LogUtils;
 import net.meloncitrus.meloncitrusmod.block.ModBlocks;
 import net.meloncitrus.meloncitrusmod.item.ModCreativeModeTabs;
 import net.meloncitrus.meloncitrusmod.item.ModItems;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -46,7 +48,11 @@ public class MelonCitrusMod {
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.MILK_BOTTLE);
+
+            event.accept(ModItems.MILK_BOTTLE.get());
+
+            event.accept(ModBlocks.CARVED_MELON.get());
+            event.accept(ModBlocks.JACK_O_MELON.get());
         }
     }
 
@@ -61,6 +67,10 @@ public class MelonCitrusMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            ItemBlockRenderTypes.setRenderLayer(
+                    ModBlocks.JACK_O_MELON.get(),
+                    RenderType.cutout()
+            );
 
         }
     }

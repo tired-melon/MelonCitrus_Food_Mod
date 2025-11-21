@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/cube",
+  "parent": "minecraft:block/orientable",
   "display": {
     "firstperson_righthand": {
       "rotation": [ 0, 135, 0 ],
@@ -8,11 +8,8 @@
     }
   },
   "textures": {
-    "east": "meloncitrusmod:block/carved_melon_top",
-    "north": "meloncitrusmod:block/carved_melon_face",
-    "west": "meloncitrusmod:block/carved_melon_top",
-    "south": "meloncitrusmod:block/carved_melon_side",
     "top": "meloncitrusmod:block/carved_melon_top",
-    "bottom": "meloncitrusmod:block/carved_melon_top"
+    "front": "meloncitrusmod:block/carved_melon_front",
+    "side": "meloncitrusmod:block/carved_melon_side"
   }
 }

@@ -1,3 +1,19 @@
 {
-
+  "variants": {
+    "facing=east": {
+      "model": "meloncitrusmod:block/jack_o_melon",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "meloncitrusmod:block/jack_o_melon"
+    },
+    "facing=south": {
+      "model": "meloncitrusmod:block/jack_o_melon",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "meloncitrusmod:block/jack_o_melon",
+      "y": 270
+    }
+  }
 }
