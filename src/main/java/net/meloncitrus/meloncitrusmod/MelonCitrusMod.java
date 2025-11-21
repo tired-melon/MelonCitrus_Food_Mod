@@ -67,10 +67,6 @@ public class MelonCitrusMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-            ItemBlockRenderTypes.setRenderLayer(
-                    ModBlocks.JACK_O_MELON.get(),
-                    RenderType.cutout()
-            );
 
         }
     }

@@ -8,7 +8,7 @@
     }
   },
   "textures": {
-    "particle": "meloncitrusmod:block/jack_o_melon",
+    "particle": "meloncitrusmod:block/jack_o_melon_back",
     "north": "meloncitrusmod:block/jack_o_melon_front",
     "south": "meloncitrusmod:block/jack_o_melon_back",
     "up": "meloncitrusmod:block/jack_o_melon_back",

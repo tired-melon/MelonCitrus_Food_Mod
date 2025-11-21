@@ -2,6 +2,7 @@ package net.meloncitrus.meloncitrusmod.block;
 
 import net.meloncitrus.meloncitrusmod.MelonCitrusMod;
 import net.meloncitrus.meloncitrusmod.block.custom.CarvedMelonBlock;
+import net.meloncitrus.meloncitrusmod.block.custom.EquipableCarvedMelonBlock;
 import net.meloncitrus.meloncitrusmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -22,7 +23,7 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, MelonCitrusMod.MOD_ID);
 
     public static final RegistryObject<Block> CARVED_MELON = registerBlock("carved_melon",
-            () -> new CarvedMelonBlock(BlockBehaviour.Properties.copy(Blocks.MELON).sound(SoundType.HARD_CROP)));
+            () -> new EquipableCarvedMelonBlock(BlockBehaviour.Properties.copy(Blocks.MELON).sound(SoundType.HARD_CROP)));
 
     public static final RegistryObject<Block> JACK_O_MELON = registerBlock("jack_o_melon",
             () -> new CarvedMelonBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN).sound(SoundType.HARD_CROP).mapColor(MapColor.COLOR_PINK)));
