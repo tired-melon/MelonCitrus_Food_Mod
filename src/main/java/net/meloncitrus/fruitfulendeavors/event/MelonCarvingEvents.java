@@ -1,7 +1,7 @@
-package net.meloncitrus.meloncitrusmod.event;
+package net.meloncitrus.fruitfulendeavors.event;
 
-import net.meloncitrus.meloncitrusmod.MelonCitrusMod;
-import net.meloncitrus.meloncitrusmod.block.ModBlocks;
+import net.meloncitrus.fruitfulendeavors.FruitfulEndeavorsMod;
+import net.meloncitrus.fruitfulendeavors.block.ModBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -17,7 +17,7 @@ import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
-@Mod.EventBusSubscriber(modid = MelonCitrusMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
+@Mod.EventBusSubscriber(modid = FruitfulEndeavorsMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class MelonCarvingEvents {
 
     @SubscribeEvent

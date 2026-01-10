@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "meloncitrusmod:item/milk_bottle"
+    "layer0": "fruitfulendeavors:item/milk_bottle"
   }
 }

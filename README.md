@@ -1,6 +1,6 @@
 # MelonCitrus_Food_Mod
 
-## This is the (temporarily) untitled food mod being made by MelonCitrus.
+## This is *Fruitful Endeavors*, a food and decor mod by MelonCitrus.
 
 ## This mod will have a variety of add-ons, especially including a cooking system that allows for higher-quality food.
 

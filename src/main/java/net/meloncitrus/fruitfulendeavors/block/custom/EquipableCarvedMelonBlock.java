@@ -1,4 +1,4 @@
-package net.meloncitrus.meloncitrusmod.block.custom;
+package net.meloncitrus.fruitfulendeavors.block.custom;
 
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.Equipable;

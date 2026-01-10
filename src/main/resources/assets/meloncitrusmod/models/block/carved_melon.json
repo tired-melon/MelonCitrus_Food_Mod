@@ -8,8 +8,8 @@
     }
   },
   "textures": {
-    "top": "meloncitrusmod:block/carved_melon_top",
-    "front": "meloncitrusmod:block/carved_melon_front",
-    "side": "meloncitrusmod:block/carved_melon_side"
+    "top": "fruitfulendeavors:block/carved_melon_top",
+    "front": "fruitfulendeavors:block/carved_melon_front",
+    "side": "fruitfulendeavors:block/carved_melon_side"
   }
 }

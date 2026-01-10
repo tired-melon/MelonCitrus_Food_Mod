@@ -8,12 +8,12 @@
     }
   },
   "textures": {
-    "particle": "meloncitrusmod:block/jack_o_melon_back",
-    "north": "meloncitrusmod:block/jack_o_melon_front",
-    "south": "meloncitrusmod:block/jack_o_melon_back",
-    "up": "meloncitrusmod:block/jack_o_melon_back",
-    "down": "meloncitrusmod:block/jack_o_melon_back",
-    "east": "meloncitrusmod:block/carved_melon_top",
-    "west": "meloncitrusmod:block/carved_melon_top"
+    "particle": "fruitfulendeavors:block/jack_o_melon_back",
+    "north": "fruitfulendeavors:block/jack_o_melon_front",
+    "south": "fruitfulendeavors:block/jack_o_melon_back",
+    "up": "fruitfulendeavors:block/jack_o_melon_back",
+    "down": "fruitfulendeavors:block/jack_o_melon_back",
+    "east": "fruitfulendeavors:block/carved_melon_top",
+    "west": "fruitfulendeavors:block/carved_melon_top"
   }
 }

@@ -1,18 +1,18 @@
 {
   "variants": {
     "facing=east": {
-      "model": "meloncitrusmod:block/carved_melon",
+      "model": "fruitfulendeavors:block/carved_melon",
       "y": 90
     },
     "facing=north": {
-      "model": "meloncitrusmod:block/carved_melon"
+      "model": "fruitfulendeavors:block/carved_melon"
     },
     "facing=south": {
-      "model": "meloncitrusmod:block/carved_melon",
+      "model": "fruitfulendeavors:block/carved_melon",
       "y": 180
     },
     "facing=west": {
-      "model": "meloncitrusmod:block/carved_melon",
+      "model": "fruitfulendeavors:block/carved_melon",
       "y": 270
     }
   }
