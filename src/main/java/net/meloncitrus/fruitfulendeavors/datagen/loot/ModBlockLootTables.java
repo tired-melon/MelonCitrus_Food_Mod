@@ -14,6 +14,7 @@ import java.util.Set;
 public class ModBlockLootTables  extends BlockLootSubProvider {
     public ModBlockLootTables(Set<Item> pExplosionResistant, FeatureFlagSet pEnabledFeatures) {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags());
+
     }
 
     @Override
