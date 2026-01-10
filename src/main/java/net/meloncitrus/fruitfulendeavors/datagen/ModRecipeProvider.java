@@ -56,10 +56,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     private void buildColorfulRecipe(DyeColor color, Consumer<FinishedRecipe> pWriter) {
         Block ingredient = TERRACOTTA_BY_COLOR.get(color);
-        ItemLike pattern = ModBlocks.PATTERNS.get(color).get();
         ItemLike tile = ModBlocks.TILES.get(color).get();
+        ItemLike pattern = ModBlocks.PATTERNS.get(color).get();
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, pattern)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, tile, 4)
                 .pattern(" # ")
                 .pattern("# #")
                 .pattern(" # ")
@@ -68,10 +68,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter,
                         ResourceLocation.fromNamespaceAndPath(
                                 FruitfulEndeavorsMod.MOD_ID,
-                                color.getName() + "_pattern"
+                                color.getName() + "_tile"
                         ));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, tile)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, pattern, 4)
                 .pattern("##")
                 .pattern("##")
                 .define('#', ingredient)
@@ -79,7 +79,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter,
                         ResourceLocation.fromNamespaceAndPath(
                                 FruitfulEndeavorsMod.MOD_ID,
-                                color.getName() + "_tile"
+                                color.getName() + "_pattern"
                         ));
     }
 }
