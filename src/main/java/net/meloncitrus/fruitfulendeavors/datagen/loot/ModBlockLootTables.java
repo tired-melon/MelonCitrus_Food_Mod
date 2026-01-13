@@ -12,18 +12,16 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.Set;
 
 public class ModBlockLootTables  extends BlockLootSubProvider {
-    public ModBlockLootTables(Set<Item> pExplosionResistant, FeatureFlagSet pEnabledFeatures) {
+    public ModBlockLootTables() {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags());
 
     }
 
     @Override
     protected void generate() {
-        for(RegistryObject<Block>block : ModBlocks.BLOCKS.getEntries()) { // Adding Color Blocks
-            if (block.toString().contains("_TILE") || block.toString().contains("_PATTERN")) {
-                this.dropSelf(block.get());
-            }
-        }
+        ModBlocks.TILES.values().forEach((val) -> this.dropSelf(val.get()));
+        ModBlocks.PATTERNS.values().forEach((val) -> this.dropSelf(val.get()));
+
         this.dropSelf(ModBlocks.MOMS_BLOCK.get());
 
         this.dropSelf(ModBlocks.CARVED_MELON.get());
