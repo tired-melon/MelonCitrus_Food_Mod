@@ -3,6 +3,7 @@ package net.meloncitrus.fruitfulendeavors.datagen;
 import net.meloncitrus.fruitfulendeavors.FruitfulEndeavorsMod;
 import net.meloncitrus.fruitfulendeavors.block.ModBlocks;
 import net.minecraft.data.PackOutput;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CarvedPumpkinBlock;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
@@ -17,7 +18,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
 
-
+        /*
         blockWithItem(ModBlocks.BLUE_PATTERN);
         blockWithItem(ModBlocks.BLACK_PATTERN);
         blockWithItem(ModBlocks.BROWN_PATTERN);
@@ -51,8 +52,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.RED_TILE);
         blockWithItem(ModBlocks.WHITE_TILE);
         blockWithItem(ModBlocks.YELLOW_TILE);
+        */
 
         blockWithItem(ModBlocks.MOMS_BLOCK);
+
+        ModBlocks.TILES.values().forEach(this::blockWithItem);
+        ModBlocks.PATTERNS.values().forEach(this::blockWithItem);
+
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

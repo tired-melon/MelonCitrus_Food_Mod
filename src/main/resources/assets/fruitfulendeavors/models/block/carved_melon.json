@@ -9,7 +9,7 @@
   },
   "textures": {
     "top": "fruitfulendeavors:block/carved_melon_top",
-    "front": "fruitfulendeavors:block/carved_melon_front",
+    "front": "fruitfulendeavors:block/carved_melon",
     "side": "fruitfulendeavors:block/carved_melon_side"
   }
 }

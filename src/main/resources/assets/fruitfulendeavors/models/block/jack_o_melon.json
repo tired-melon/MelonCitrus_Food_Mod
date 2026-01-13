@@ -9,7 +9,7 @@
   },
   "textures": {
     "particle": "fruitfulendeavors:block/jack_o_melon_back",
-    "north": "fruitfulendeavors:block/jack_o_melon_front",
+    "north": "fruitfulendeavors:block/jack_o_melon",
     "south": "fruitfulendeavors:block/jack_o_melon_back",
     "up": "fruitfulendeavors:block/jack_o_melon_back",
     "down": "fruitfulendeavors:block/jack_o_melon_back",

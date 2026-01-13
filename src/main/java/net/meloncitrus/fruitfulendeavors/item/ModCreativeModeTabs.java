@@ -25,48 +25,17 @@ public class ModCreativeModeTabs {
                     .build());
 
 
-    public static final RegistryObject<CreativeModeTab> CROP_TAB = CREATIVE_MODE_TABS.register(
+    public static final RegistryObject<CreativeModeTab> DECORATIVE_TAB = CREATIVE_MODE_TABS.register(
             "deco_blocks_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(Items.BLUE_GLAZED_TERRACOTTA))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.MOMS_BLOCK.get()))
                     .title(Component.translatable("creativetab.deco_blocks_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
 
                         output.accept(ModBlocks.CARVED_MELON.get());
                         output.accept(ModBlocks.JACK_O_MELON.get());
 
-                        output.accept(ModBlocks.BLUE_PATTERN.get());
-                        output.accept(ModBlocks.BLACK_PATTERN.get());
-                        output.accept(ModBlocks.BROWN_PATTERN.get());
-                        output.accept(ModBlocks.CYAN_PATTERN.get());
-                        output.accept(ModBlocks.GRAY_PATTERN.get());
-                        output.accept(ModBlocks.GREEN_PATTERN.get());
-                        output.accept(ModBlocks.LIGHT_BLUE_PATTERN.get());
-                        output.accept(ModBlocks.LIGHT_GRAY_PATTERN.get());
-                        output.accept(ModBlocks.LIME_PATTERN.get());
-                        output.accept(ModBlocks.MAGENTA_PATTERN.get());
-                        output.accept(ModBlocks.ORANGE_PATTERN.get());
-                        output.accept(ModBlocks.PINK_PATTERN.get());
-                        output.accept(ModBlocks.PURPLE_PATTERN.get());
-                        output.accept(ModBlocks.RED_PATTERN.get());
-                        output.accept(ModBlocks.WHITE_PATTERN.get());
-                        output.accept(ModBlocks.YELLOW_PATTERN.get());
-
-                        output.accept(ModBlocks.BLUE_TILE.get());
-                        output.accept(ModBlocks.BLACK_TILE.get());
-                        output.accept(ModBlocks.BROWN_TILE.get());
-                        output.accept(ModBlocks.CYAN_TILE.get());
-                        output.accept(ModBlocks.GRAY_TILE.get());
-                        output.accept(ModBlocks.GREEN_TILE.get());
-                        output.accept(ModBlocks.LIGHT_BLUE_TILE.get());
-                        output.accept(ModBlocks.LIGHT_GRAY_TILE.get());
-                        output.accept(ModBlocks.LIME_TILE.get());
-                        output.accept(ModBlocks.MAGENTA_TILE.get());
-                        output.accept(ModBlocks.ORANGE_TILE.get());
-                        output.accept(ModBlocks.PINK_TILE.get());
-                        output.accept(ModBlocks.PURPLE_TILE.get());
-                        output.accept(ModBlocks.RED_TILE.get());
-                        output.accept(ModBlocks.WHITE_TILE.get());
-                        output.accept(ModBlocks.YELLOW_TILE.get());
+                        ModBlocks.TILES.values().forEach((val) -> output.accept(val.get()));
+                        ModBlocks.PATTERNS.values().forEach((val) -> output.accept(val.get()));
 
                         output.accept(ModBlocks.MOMS_BLOCK.get());
                     })
