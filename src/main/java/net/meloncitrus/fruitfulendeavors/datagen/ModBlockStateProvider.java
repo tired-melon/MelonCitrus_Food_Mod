@@ -4,6 +4,7 @@ import net.meloncitrus.fruitfulendeavors.FruitfulEndeavorsMod;
 import net.meloncitrus.fruitfulendeavors.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.CarvedPumpkinBlock;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
@@ -15,8 +16,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        blockWithItem(ModBlocks.CARVED_MELON);
-        blockWithItem(ModBlocks.JACK_O_MELON);
+
 
         blockWithItem(ModBlocks.BLUE_PATTERN);
         blockWithItem(ModBlocks.BLACK_PATTERN);

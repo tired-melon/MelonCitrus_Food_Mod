@@ -3,10 +3,7 @@ package net.meloncitrus.fruitfulendeavors.datagen;
 import net.meloncitrus.fruitfulendeavors.FruitfulEndeavorsMod;
 import net.meloncitrus.fruitfulendeavors.block.ModBlocks;
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.recipes.FinishedRecipe;
-import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.data.recipes.ShapedRecipeBuilder;
+import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.DyeColor;
@@ -52,6 +49,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         for (DyeColor color : DyeColor.values()) {
             buildColorfulRecipe(color, pWriter);
         }
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, ModBlocks.JACK_O_MELON.get())
+                .requires(ModBlocks.CARVED_MELON.get())
+                .requires(Blocks.TORCH)
+                .unlockedBy(getHasName(ModBlocks.CARVED_MELON.get()), has(ModBlocks.CARVED_MELON.get()))
+                .save(pWriter);
     }
 
     private void buildColorfulRecipe(DyeColor color, Consumer<FinishedRecipe> pWriter) {
