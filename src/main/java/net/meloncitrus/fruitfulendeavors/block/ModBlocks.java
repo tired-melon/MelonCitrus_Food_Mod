@@ -44,7 +44,6 @@ public class ModBlocks {
                     () -> new Block(
                             BlockBehaviour.Properties
                                     .copy(Blocks.TERRACOTTA)
-                                    .sound(SoundType.DECORATED_POT)
                                     .mapColor(color)
                     )
             ));
@@ -58,6 +57,7 @@ public class ModBlocks {
                     () -> new Block(
                             BlockBehaviour.Properties
                                     .copy(Blocks.TERRACOTTA)
+                                    .sound(SoundType.DECORATED_POT)
                                     .mapColor(color)
                     )
             ));
