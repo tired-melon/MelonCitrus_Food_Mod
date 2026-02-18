@@ -3,6 +3,7 @@ package net.meloncitrus.fruitfulendeavors.block;
 import net.meloncitrus.fruitfulendeavors.FruitfulEndeavorsMod;
 import net.meloncitrus.fruitfulendeavors.block.custom.CarvedMelonBlock;
 import net.meloncitrus.fruitfulendeavors.block.custom.EquipableCarvedMelonBlock;
+import net.meloncitrus.fruitfulendeavors.block.custom.TomatoCropBlock;
 import net.meloncitrus.fruitfulendeavors.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeColor;
@@ -29,6 +30,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> JACK_O_MELON = registerBlock("jack_o_melon",
             () -> new CarvedMelonBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN).sound(SoundType.HARD_CROP).mapColor(MapColor.COLOR_PINK)));
+
+    public static final RegistryObject<Block> TOMATO_CROP = BLOCKS.register("tomato_crop",
+            () -> new TomatoCropBlock(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noOcclusion().noCollission()));
 
     public static final EnumMap<DyeColor, RegistryObject<Block>> PATTERNS =
             new EnumMap<>(DyeColor.class);
@@ -63,7 +67,6 @@ public class ModBlocks {
             ));
         }
     }
-
     public static final RegistryObject<Block> MOMS_BLOCK = registerBlock("moms_block",
             () -> new GlazedTerracottaBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).sound(SoundType.AMETHYST)));
 

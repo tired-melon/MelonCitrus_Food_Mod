@@ -1,6 +1,9 @@
 {
   "item.fruitfulendeavors.milk_bottle": "Bottle of Milk",
 
+  "item.fruitfulendeavors.tomato_seeds": "Tomato Seeds",
+  "item.fruitfulendeavors.tomato": "Tomato",
+
   "block.fruitfulendeavors.carved_melon": "Melon with a Face",
   "block.fruitfulendeavors.jack_o_melon": "Jack o' Melon",
 
@@ -41,5 +44,6 @@
   "block.fruitfulendeavors.moms_block":  "Mom's Block <3",
 
   "creativetab.ingredient_tab": "Ingredient Tab",
-  "creativetab.deco_blocks_tab": "Decorative Blocks"
+  "creativetab.deco_blocks_tab": "Decorative Blocks",
+  "creativetab.crop_tab": "Crop Tab"
 }

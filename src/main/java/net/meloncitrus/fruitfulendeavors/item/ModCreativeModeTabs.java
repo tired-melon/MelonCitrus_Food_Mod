@@ -21,6 +21,17 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.ingredient_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                        output.accept(ModItems.MILK_BOTTLE.get());
+                       output.accept(ModItems.TOMATO.get());
+                    })
+                    .build());
+
+    public static final RegistryObject<CreativeModeTab> CROP_TAB = CREATIVE_MODE_TABS.register(
+            "crop_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.TOMATO.get()))
+                    .title(Component.translatable("creativetab.crop_tab"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.TOMATO_SEEDS.get());
+                        output.accept(ModItems.TOMATO.get());
                     })
                     .build());
 
@@ -36,7 +47,6 @@ public class ModCreativeModeTabs {
 
                         ModBlocks.TILES.values().forEach((val) -> output.accept(val.get()));
                         ModBlocks.PATTERNS.values().forEach((val) -> output.accept(val.get()));
-
                         output.accept(ModBlocks.MOMS_BLOCK.get());
                     })
                     .build());
